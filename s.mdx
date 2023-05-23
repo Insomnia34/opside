@@ -9,10 +9,16 @@
 
 ### Step 1 : Vps oluşturma 
 - İşletim sistemi olarak ubuntu 20 seçip bir sunucu açın
-### Step 2 : Otomatik yükleyiciyi Çalıştırın 
-- Aşağıdaki kodu kopyalayıp sunucuya yapıştırın
+
+### Step 2 :Sunucuyu Güncelleyin
 ```
 sudo apt update && sudo apt upgrade -y
+
+```
+### Step 3 :Yükleyiciyi Çalıştırın
+
+- Aşağıdaki kodu kopyalayıp sunucuya yapıştırın
+```
 wget -c https://pre-alpha-download.opside.network/testnet-auto-install-v2.tar.gz 
 tar -C ./ -xzf testnet-auto-install-v2.tar.gz
 chmod +x -R ./testnet-auto-install-v2
@@ -23,12 +29,12 @@ cd ./testnet-auto-install-v2
 ```
 ./install-ubuntu-en-1.0.sh
 ```
-- Kurduktan sonra withdraw için bir adres istenecektir
+- Kurduktan sonra withdraw için bir adres istenecektir. Metamask adresinizi girin
 - Örneğin **0xBD4607D96707e2Db677DEc672F9EA61Caedf3469**
-- Ardından 8 haneli şifre girin
-- Aedından adresi tekrar girin 
-- Ardından tekrar şifreyi girin
-- ***Bundan sonra size bir ibare verilecek, lütfen düzgün bir şekilde saklayın*
+- Ardından 8 haneli şifre oluşturun 
+- Aedından adresinizi tekrar girin 
+- Ardından tekrar şifreyizi girin
+- ***Bundan adımdan sonra size kelimeler verilecek, onu lütfen düzgün bir şekilde saklayın*
 - Doğru yapmışsanız aşağıdaki gibi görünecektir
 <a href="https://ibb.co/BzKJTjy"><img src="https://i.ibb.co/w0rqpCS/image.png" alt="image" border="0"></a>
 - Bu kurulumun tamamlandığı anlamına gelir
@@ -39,13 +45,13 @@ opside-chain/show-geth-log.sh
 ```
 - Burdan kontrol et https://pre-alpha.opside.info/
 - Yukarıdaki komutu kullanarak explorer'daki ve vps'nizdeki bloğun doğru olduğundan emin olun
--  **Sayılar bloklardır**
+-  **Number yazan kısım blokları gösterir**
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/q0p2Fdw/image.png" alt="image" border="0"></a>
 - Her şey doğruysa bir sonraki adıma geçin
 
 ### Step 5 : Doğrulayıcıyı Çalıştırma
 - Öncelikle siteye girin https://opside.network/validator
-- ayfayı aşağı kaydırın ve stake etmeye başlayın
+- Sayfayı aşağı kaydırın ve "Start Stake" e tıklayın.
 - Ardından devama basın
 <a href="https://ibb.co/R96Qqm9"><img src="https://i.ibb.co/SPmVz8P/image.png" alt="image" border="0"></a>
 - Eğer yukarıdaki görseldeki gibiyse VPS ye dönerek json dosyasını alın.
